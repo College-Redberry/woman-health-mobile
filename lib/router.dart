@@ -4,6 +4,7 @@ import 'package:woman_health/ui/auth/widgets/login.dart';
 import 'package:woman_health/ui/bleeding_between_periods/widgets/bleeding_between_periods.dart';
 import 'package:woman_health/ui/breast_cancer/widgets/breast_cancer.dart';
 import 'package:woman_health/ui/cervical_cancer/widgets/cervical_cancer.dart';
+import 'package:woman_health/ui/content/widgets/content.dart';
 import 'package:woman_health/ui/core/widgets/shell.dart';
 import 'package:woman_health/ui/home/widgets/home.dart';
 import 'package:woman_health/ui/menopause/widgets/menopause.dart';
@@ -12,6 +13,7 @@ import 'package:woman_health/ui/menstrual_cycle/widgets/menstrual_cycle.dart';
 import 'package:woman_health/ui/missed_period/widgets/missed_period.dart';
 import 'package:woman_health/ui/pain_while_urinating/widgets/pain_while_urinating.dart';
 import 'package:woman_health/ui/pms_and_emotions/widgets/pms_and_emotions.dart';
+import 'package:woman_health/ui/profile/widgets/profile.dart';
 import 'package:woman_health/ui/self_care/widgets/self_care.dart';
 import 'package:woman_health/ui/vaginal_discharge/widgets/vaginal_discharge.dart';
 import 'package:woman_health/ui/violence_against_women/widgets/violence_against_women.dart';
@@ -32,6 +34,16 @@ final GoRouter router = GoRouter(
         GoRoute(
           path: '/home',
           builder: (context, state) => const HomePage(),
+        ),
+
+        GoRoute(
+          path: '/content',
+          builder: (context, state) => const ContentPage(),
+        ),
+
+        GoRoute(
+          path: '/profile',
+          builder: (context, state) => const ProfilePage(),
         ),
 
         GoRoute(
