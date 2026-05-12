@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:woman_health/ui/auth/view_models/login_scope.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginPageState extends State<LoginPage> {
   final _email = TextEditingController();
   final _pass = TextEditingController();
 
@@ -23,12 +23,11 @@ class _LoginScreenState extends State<LoginScreen> {
             TextField(controller: _email, decoration: const InputDecoration(labelText: 'Email')),
             TextField(controller: _pass, obscureText: true),
             const SizedBox(height: 20),
-            if (viewModel.error != null) Text(viewModel.error!),
             const SizedBox(height: 20),
             viewModel.isLoading
                 ? const CircularProgressIndicator()
                 : ElevatedButton(
-                    onPressed: () => viewModel.login(_email.text, _pass.text),
+                    onPressed: () => viewModel.signIn(context, _email.text, _pass.text),
                     child: const Text('Sign In'),
                   ),
           ],

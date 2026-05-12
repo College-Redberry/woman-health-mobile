@@ -11,10 +11,26 @@ class HttpAuthRepository implements AuthRepository {
 
   HttpAuthRepository(this._authService, this._hashService);
 
+  User? user;
+
   @override
   AsyncResult<User> signIn(String email, String password) async {
     final hashedPassword = _hashService.hashPassword(password);
 
-    return await _authService.authenticate(email, hashedPassword);
+    final result = await _authService.authenticate(email, hashedPassword);
+
+    result.onSuccess((success) => user = success);
+
+    return result;
+  }
+  
+  @override
+  bool isLogged() {
+    return user != null;
+  }
+  
+  @override
+  void signOut() {
+    user = null;
   }
 }

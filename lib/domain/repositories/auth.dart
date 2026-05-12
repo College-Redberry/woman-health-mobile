@@ -4,4 +4,6 @@ import '../models/user.dart';
 
 abstract interface class AuthRepository {
   AsyncResult<User> signIn(String email, String password);
+  void signOut();
+  bool isLogged();
 }
