@@ -19,20 +19,14 @@ import 'package:woman_health/ui/violence_against_women/widgets/violence_against_
 final GoRouter router = GoRouter(
   initialLocation: '/login',
   routes: [
-    GoRoute(
-      path: '/login',
-      builder: (context, state) => const LoginPage(),
-    ),
+    GoRoute(path: '/login', builder: (context, state) => const LoginPage()),
 
     ShellRoute(
       builder: (context, state, child) {
         return Shell(child: child);
       },
       routes: [
-        GoRoute(
-          path: '/home',
-          builder: (context, state) => const HomePage(),
-        ),
+        GoRoute(path: '/home', builder: (context, state) => const HomePage()),
 
         GoRoute(
           path: '/vaginal-discharge',
@@ -51,19 +45,22 @@ final GoRouter router = GoRouter(
 
         GoRoute(
           path: '/bleeding-between-periods',
-          builder: (context, state) =>
-              const BleedingBetweenPeriodsPage(),
+          builder: (context, state) => const BleedingBetweenPeriodsPage(),
         ),
 
         GoRoute(
           path: '/pain-while-urinating',
-          builder: (context, state) =>
-              const PainWhileUrinatingPage(),
+          builder: (context, state) => const PainWhileUrinatingPage(),
         ),
 
         GoRoute(
           path: '/menstrual-cycle',
           builder: (context, state) => const MenstrualCyclePage(),
+        ),
+
+        GoRoute(
+          path: '/register-symptoms',
+          builder: (context, state) => const RegisterSymptomsPage(),
         ),
 
         GoRoute(
@@ -83,14 +80,12 @@ final GoRouter router = GoRouter(
 
         GoRoute(
           path: '/violence-against-women',
-          builder: (context, state) =>
-              const ViolenceAgainstWomenPage(),
+          builder: (context, state) => const ViolenceAgainstWomenPage(),
         ),
 
         GoRoute(
           path: '/perimenopause-menopause',
-          builder: (context, state) =>
-              const MenopausePage(),
+          builder: (context, state) => const MenopausePage(),
         ),
 
         GoRoute(
