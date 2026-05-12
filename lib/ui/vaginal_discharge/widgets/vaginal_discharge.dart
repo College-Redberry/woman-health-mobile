@@ -7,7 +7,6 @@ class VaginalDischargePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Corrimento vaginal',
       intro: [
         'Corrimentos vaginais, o que você deve saber sobre?',
         'Durante o ciclo da mulher, o muco pode apresentar características diferentes, mas ainda assim, ser considerado normal.',

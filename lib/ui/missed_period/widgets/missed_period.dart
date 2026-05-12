@@ -7,7 +7,6 @@ class MissedPeriodPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Atraso menstrual',
       sections: [
         HealthSection(
           title: 'Quando procurar a UBS:',

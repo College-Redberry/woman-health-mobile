@@ -7,7 +7,6 @@ class MenopausePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Climatério e Menopausa',
       intro: [
         'O climatério é a fase da vida da mulher em que o corpo está passando da etapa reprodutiva (em que pode engravidar) para a etapa não reprodutiva. Essa transição costuma acontecer, em geral, entre os 40 e 65 anos de idade.',
         'A menopausa é um marco importante dentro do climatério. Ela significa a parada definitiva da menstruação. O diagnóstico só pode ser confirmado depois que a mulher fica 12 meses seguidos sem menstruar, sem outra causa para isso. Geralmente, a menopausa acontece entre os 48 e 50 anos de idade.',

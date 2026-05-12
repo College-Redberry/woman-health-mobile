@@ -7,7 +7,6 @@ class SelfCarePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Autocuidado e Hábitos Saudáveis',
       sections: [
         HealthSection(
           title: 'O que é normal:',

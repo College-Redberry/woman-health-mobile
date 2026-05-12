@@ -6,6 +6,7 @@ import 'package:woman_health/data/services/hash.dart';
 import 'package:woman_health/router.dart';
 import 'package:woman_health/ui/auth/view_models/login_scope.dart';
 import 'package:woman_health/ui/auth/view_models/login.dart';
+import 'package:woman_health/ui/core/theme/app_theme.dart';
 
 void main() {
   final hashService = CryptoHashService();
@@ -18,11 +19,8 @@ void main() {
     LoginScope(
       viewModel: loginViewModel,
       child: MaterialApp.router(
-        routerConfig: router, 
-        theme: ThemeData(
-          colorSchemeSeed: Colors.pink,
-          useMaterial3: true,
-        ),        
+        routerConfig: router,
+        theme: AppTheme.light(),
       ),
     ),
   );

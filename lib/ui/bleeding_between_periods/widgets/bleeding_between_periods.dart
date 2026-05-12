@@ -7,7 +7,6 @@ class BleedingBetweenPeriodsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Sangramento fora do período menstrual',
       intro: [
         'Fazer um diário para registro de sangramento fora do período menstrual com as datas do calendário e apresentar ao médico durante a consulta.',
       ],

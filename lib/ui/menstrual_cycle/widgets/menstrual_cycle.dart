@@ -7,7 +7,6 @@ class MenstrualCyclePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Conheça seu ciclo menstrual',
       intro: [
         'O ciclo menstrual costuma variar entre 21 e 36 dias, com sangramento de 3 a 7 dias. É normal pequenas variações de duração e intensidade, especialmente em adolescentes, pós-parto e perto da menopausa.',
       ],

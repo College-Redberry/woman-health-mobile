@@ -7,7 +7,6 @@ class MenstrualCrampsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Cólica',
       intro: [
         'É uma dor na parte de baixo da barriga (abaixo do umbigo), comum em mulheres. É muito comum em jovens e adolescentes logo após a primeira menstruação. Porém, se você sentir dor forte ou cólicas intensas nessa região, é importante procurar a sua UBS para avaliação.',
       ],

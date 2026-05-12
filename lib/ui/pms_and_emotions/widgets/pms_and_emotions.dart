@@ -7,7 +7,6 @@ class PmsAndEmotionsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'TPM e Alterações Emocionais',
       intro: [
         'Humor: Antes da menstruação, ocorre uma queda do hormônio estrogênio. Essa mudança pode influenciar substâncias do cérebro, como a serotonina e a dopamina, que estão relacionadas ao bem-estar e às emoções.',
         'Por isso, algumas mulheres podem sentir irritação, tristeza, sensibilidade maior ou mudanças de humor nesse período. Mas é importante lembrar que nem todas vão sentir os mesmos sintomas, e eles nem sempre acontecem apenas por causa da menstruação. Fatores como estresse, rotina, alimentação, sono e situações pessoais também influenciam bastante.',

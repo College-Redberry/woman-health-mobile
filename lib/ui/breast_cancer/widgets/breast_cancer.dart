@@ -7,7 +7,6 @@ class BreastCancerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Prevenção e Rastreio do Câncer de Mama',
       sections: [
         HealthSection(
           title: 'O que é normal:',

@@ -7,7 +7,6 @@ class PainWhileUrinatingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Dor ou ardor ao urinar',
       sections: [
         HealthSection(
           title: 'Sintomas associados:',

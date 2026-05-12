@@ -7,7 +7,6 @@ class CervicalCancerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Prevenção e Rastreio do Câncer de Colo do Útero',
       sections: [
         HealthSection(
           title: 'O que é normal:',

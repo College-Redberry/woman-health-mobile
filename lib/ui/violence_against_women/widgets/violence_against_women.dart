@@ -7,7 +7,6 @@ class ViolenceAgainstWomenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const HealthContent(
-      title: 'Violência Contra a Mulher',
       intro: [
         'A violência contra a mulher é qualquer atitude ou comportamento motivado pelo fato de ela ser mulher que provoque morte, dor, sofrimento ou prejuízo físico, sexual ou emocional.',
         'Isso pode acontecer tanto em espaços públicos (como na rua ou no trabalho) quanto dentro de casa, no ambiente familiar ou em um relacionamento.',
