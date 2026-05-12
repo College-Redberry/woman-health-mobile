@@ -104,9 +104,9 @@ class RegisterSymptomsPage extends StatelessWidget {
       body: SafeArea(
         child: ListView.separated(
           padding: const EdgeInsets.fromLTRB(8, 26, 8, 92),
-          itemCount: _symptoms.length + 3,
+          itemCount: _symptoms.length + 2,
           separatorBuilder: (_, index) {
-            if (index == 0 || index == _symptoms.length + 1) {
+            if (index == 0 || index == _symptoms.length) {
               return const SizedBox.shrink();
             }
 
@@ -164,7 +164,7 @@ class RegisterSymptomsPage extends StatelessWidget {
               );
             }
 
-            if (index == _symptoms.length + 2) {
+            if (index == _symptoms.length + 1) {
               return Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: SizedBox(
@@ -404,7 +404,7 @@ class _CycleStats extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: 12,
         crossAxisSpacing: 12,
-        childAspectRatio: 2.05,
+        childAspectRatio: 1.72,
       ),
       children: const [
         _StatCard(icon: '🩸', value: '15 dias', label: 'Próxima menstruação'),
@@ -434,7 +434,7 @@ class _StatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return _WhiteCard(
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 12),
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
