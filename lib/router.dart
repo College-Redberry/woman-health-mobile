@@ -1,22 +1,22 @@
 import 'package:go_router/go_router.dart';
 
 import 'package:woman_health/ui/auth/widgets/login.dart';
-import 'package:woman_health/ui/bleeding_between_periods/widgets/bleeding_between_periods.dart';
-import 'package:woman_health/ui/breast_cancer/widgets/breast_cancer.dart';
-import 'package:woman_health/ui/cervical_cancer/widgets/cervical_cancer.dart';
-import 'package:woman_health/ui/content/widgets/content.dart';
+import 'package:woman_health/ui/faq/widgets/bleeding_between_periods.dart';
+import 'package:woman_health/ui/faq/widgets/breast_cancer.dart';
+import 'package:woman_health/ui/faq/widgets/cervical_cancer.dart';
+import 'package:woman_health/ui/faq/widgets/menu.dart';
 import 'package:woman_health/ui/core/widgets/shell.dart';
 import 'package:woman_health/ui/home/widgets/home.dart';
-import 'package:woman_health/ui/menopause/widgets/menopause.dart';
-import 'package:woman_health/ui/menstrual_cramps/widgets/menstrual_champs.dart';
-import 'package:woman_health/ui/menstrual_cycle/widgets/menstrual_cycle.dart';
-import 'package:woman_health/ui/missed_period/widgets/missed_period.dart';
-import 'package:woman_health/ui/pain_while_urinating/widgets/pain_while_urinating.dart';
-import 'package:woman_health/ui/pms_and_emotions/widgets/pms_and_emotions.dart';
+import 'package:woman_health/ui/faq/widgets/menopause.dart';
+import 'package:woman_health/ui/faq/widgets/menstrual_champs.dart';
+import 'package:woman_health/ui/faq/widgets/menstrual_cycle.dart';
+import 'package:woman_health/ui/faq/widgets/missed_period.dart';
+import 'package:woman_health/ui/faq/widgets/pain_while_urinating.dart';
+import 'package:woman_health/ui/faq/widgets/pms_and_emotions.dart';
 import 'package:woman_health/ui/profile/widgets/profile.dart';
-import 'package:woman_health/ui/self_care/widgets/self_care.dart';
-import 'package:woman_health/ui/vaginal_discharge/widgets/vaginal_discharge.dart';
-import 'package:woman_health/ui/violence_against_women/widgets/violence_against_women.dart';
+import 'package:woman_health/ui/faq/widgets/self_care.dart';
+import 'package:woman_health/ui/faq/widgets/vaginal_discharge.dart';
+import 'package:woman_health/ui/faq/widgets/violence_against_women.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/login',
@@ -38,7 +38,7 @@ final GoRouter router = GoRouter(
 
         GoRoute(
           path: '/content',
-          builder: (context, state) => const ContentPage(),
+          builder: (context, state) => const FaqMenuPage(),
         ),
 
         GoRoute(
@@ -63,14 +63,12 @@ final GoRouter router = GoRouter(
 
         GoRoute(
           path: '/bleeding-between-periods',
-          builder: (context, state) =>
-              const BleedingBetweenPeriodsPage(),
+          builder: (context, state) => const BleedingBetweenPeriodsPage(),
         ),
 
         GoRoute(
           path: '/pain-while-urinating',
-          builder: (context, state) =>
-              const PainWhileUrinatingPage(),
+          builder: (context, state) => const PainWhileUrinatingPage(),
         ),
 
         GoRoute(
@@ -95,14 +93,12 @@ final GoRouter router = GoRouter(
 
         GoRoute(
           path: '/violence-against-women',
-          builder: (context, state) =>
-              const ViolenceAgainstWomenPage(),
+          builder: (context, state) => const ViolenceAgainstWomenPage(),
         ),
 
         GoRoute(
           path: '/perimenopause-menopause',
-          builder: (context, state) =>
-              const MenopausePage(),
+          builder: (context, state) => const MenopausePage(),
         ),
 
         GoRoute(

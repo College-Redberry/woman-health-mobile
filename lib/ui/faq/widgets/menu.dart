@@ -3,8 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:woman_health/ui/core/theme/app_theme.dart';
 
-class ContentPage extends StatelessWidget {
-  const ContentPage({super.key});
+class FaqMenuPage extends StatelessWidget {
+  const FaqMenuPage({super.key});
 
   static const List<({String path, String emoji, String label, String summary})> items = [
     (path: '/vaginal-discharge', emoji: '💧', label: 'Corrimento vaginal', summary: 'O que é normal e quando procurar a UBS.'),
