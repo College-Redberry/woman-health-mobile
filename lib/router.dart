@@ -13,7 +13,7 @@ import 'package:woman_health/ui/faq/widgets/menstrual_cycle.dart';
 import 'package:woman_health/ui/faq/widgets/missed_period.dart';
 import 'package:woman_health/ui/faq/widgets/pain_while_urinating.dart';
 import 'package:woman_health/ui/faq/widgets/pms_and_emotions.dart';
-import 'package:woman_health/ui/profile/widgets/profile.dart';
+import 'package:woman_health/ui/profile/widgets/profile_page.dart';
 import 'package:woman_health/ui/faq/widgets/self_care.dart';
 import 'package:woman_health/ui/faq/widgets/vaginal_discharge.dart';
 import 'package:woman_health/ui/faq/widgets/violence_against_women.dart';

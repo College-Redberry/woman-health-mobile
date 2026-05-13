@@ -33,4 +33,7 @@ class HttpAuthRepository implements AuthRepository {
   void signOut() {
     user = null;
   }
+  
+  @override
+  User? get loggedUser => user;
 }
