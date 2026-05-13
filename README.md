@@ -1,36 +1,72 @@
-# 🌸 App Saúde da Mulher
+Minha Saúde Feminina
+Sobre: Um aplicativo pensado para cuidar da mulher em todas as fases da vida, o projeto desenvolvido em parceria entre estudantes da área da Medicina e Sistemas de Informação, com foco em informação acessível, acompanhamento e promoção do autocuidado feminino. Nasce como uma solução digital gratuita, acessível e acolhedora, criada para auxiliar mulheres no acompanhamento da saúde íntima, emocional e física ao longo da vida. O aplicativo busca oferecer informações confiáveis, lembretes importantes e conteúdos educativos em linguagem simples e próxima da realidade das usuárias.
 
-Este é um projeto de aplicação móvel desenvolvido em **Flutter** focado na literacia em saúde feminina. O objetivo é fornecer orientações claras sobre queixas ginecológicas e obstétricas comuns, ajudando a identificar quando é necessário procurar uma Unidade Básica de Saúde (UBS).
+Objetivos: 
 
----
+Disponibilizar informações claras e acessíveis,
+Acompanhamento do ciclo menstrual,
+Orientações sobre saúde íntima,
+Apoio sobre métodos contraceptivos,
+Conteúdos educativos sobre gravidez, menopausa e bem-estar
+Lembretes de exames, vacinas e consultas
+Incentivo ao autocuidado e ao autoconhecimento.
 
-## 🏗️ Arquitetura (Official Flutter Case Study)
+Problemas Identificados: 
+Durante o levantamento do projeto, foram identificadas dificuldades enfrentadas por muitas mulheres no cuidado contínuo da saúde.
+Exemplos: 
+Falta de informação simples e confiável
+Dificuldade em acompanhar sintomas e ciclo menstrual
+Esquecimento de exames e consultas
+Vergonha ou insegurança para buscar ajuda
 
-O projeto segue rigorosamente o padrão **MVVM (Model-View-ViewModel)** com o estilo de organização por **Camadas e Funcionalidades** sugerido no estudo de caso oficial da Google.
+Essas barreiras podem ocasionar:
+Diagnósticos tardios;
+Gravidez não planejada;
+Abandono de tratamentos;
+Dependência excessiva de serviços de urgência;
+Aumento de doenças ginecológicas.
+
+Funcionalidades do Aplicativo:
+
+Saúde Feminina:
+Informações sobre saúdde íntima
+Orientações sobre doenças ginecológicas
+Educação em saúde feminina
+
+Ciclo Menstrual:
+Registro e acompanhamento do ciclo
+Controle de sintomas
+Monitoramento do período fértil
+
+Lembretes Inteligentes:
+Exames preventivos;
+Consultas médicas
+Vacinas e cuidados periódicos
+
+Bem-estar e Saúde Emocional:
+Conteúdos sobre autoestima
+Saúde mental
+Qualidade de vida
+
+Um Aplicativo para Todas as Fases da Vida
+O projeto considera que as necessidades da mulher mudam ao longo do tempo. Por isso, o aplicativo oferece conteúdos adaptados para diferentes fases adolescência, vida adulta, gestação e pós-parto, climatério e menopausa, senescência, mulheres com condições crônicas e mulheres tentando engravidar. Cada fase recebe cuidados e orientações específicas.
+
+Integração com o Cuidado em Saúde
+O aplicativo não substitui o atendimento médico, mas atua como uma ferramenta de apoio ao cuidado contínuo, incentivando o fortalecimento do vínculo com a atenção primária, o autocuidado, o autoconhecimento, a busca por atendimento profissional quando necessário.
+
+Tecnologias Utilizadas:
+Flutter
+Node.js
+PostgreSql
+Laravel 
+
+Equipe do Projeto:
+Projeto interdisciplinar desenvolvido em parceria entre as áreas de Medicina e Sistemas de Informação
+
+Considerações Finais:
+O Minha Saúde Feminina busca utilizar a tecnologia como aliada do cuidado humano, promovendo informação, acolhimento e autonomia para mulheres em diferentes contextos e fases da vida.
 
 
-## 🛠️ Tecnologias e Padrões Utilizados
+ 
 
-* **[go_router](https://pub.dev/packages/go_router):** Navegação declarativa com suporte a rotas nomeadas e parâmetros.
-* **[result_dart](https://pub.dev/packages/result_dart):** Implementação do **Result Pattern** para um tratamento de erros seguro, evitando o uso excessivo de `try-catch`.
-* **[crypto](https://pub.dev/packages/crypto):** Utilizado na camada de serviço para realizar o hashing de passwords (SHA-256) antes do envio para o repositório.
-* **Vanilla DI:** Injeção de dependência feita manualmente via construtores e Scopes, sem necessidade de pacotes externos como `get_it`.
 
----
-
-## 🚀 Como Executar o Projeto
-
-### 1. Pré-requisitos
-* Flutter SDK instalado (versão estável).
-* Um emulador ou dispositivo físico configurado.
-
-### 2. Configurar Dependências
-No teu ficheiro `pubspec.yaml`, certifica-te de que tens as seguintes linhas:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  go_router: ^13.0.0
-  result_dart: ^1.1.0
-  crypto: ^3.0.3
